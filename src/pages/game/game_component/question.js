@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from "./question.module.css"
 
-const Question = () => {
+const Question = (props) => {
     return (
         <>
         <div className={styles.container}>
             <div className={styles.question}>
                 {
-                    "What is the capital of Ukraine?"
+                    props.question
                 }
             </div>
         </div>
