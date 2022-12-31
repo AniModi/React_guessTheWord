@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    position: relative;
+    top: 20px;
+    bottom: 30px;
+    height: 20%;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE15D;
+    padding: 0 25px;
+}
+
+.container > *:not(:last-child) {
+    margin-right: 30px;
+  }

@@ -1,0 +1,135 @@
+{
+    "countries": [
+        {
+            "word": "Brazil",
+            "hint": "Br___",
+            "question": "Large South American country known for its soccer team and Carnival festival"
+        },
+        {
+            "word": "Japan",
+            "hint": "J___",
+            "question": "Island country in East Asia with a unique culture and advanced technology"
+        },
+        {
+            "word": "Italy",
+            "hint": "I___",
+            "question": "European country known for its art, cuisine, and fashion"
+        },
+        {
+            "word": "Egypt",
+            "hint": "E___",
+            "question": "African country with a long history and many ancient pyramids and temples"
+        },
+        {
+            "word": "Australia",
+            "hint": "Au___",
+            "question": "Island continent known for its diverse wildlife and natural landscapes"
+        }
+    ],
+    "animals": [
+        {
+            "word": "Gorilla",
+            "hint": "G___",
+            "question": "Large primate found in the forests of Africa"
+        },
+        {
+            "word": "Kangaroo",
+            "hint": "K___",
+            "question": "Marsupial native to Australia known for its powerful legs and tail"
+        },
+        {
+            "word": "Panda",
+            "hint": "P___",
+            "question": "Bear native to China with distinctive black and white fur"
+        },
+        {
+            "word": "Tiger",
+            "hint": "T___",
+            "question": "Large carnivorous cat found in various parts of Asia"
+        },
+        {
+            "word": "Penguin",
+            "hint": "P___",
+            "question": "Flightless bird found in the Southern Hemisphere, known for its tuxedo-like appearance"
+        }
+    ],
+    "movies": [
+        {
+            "word": "Avatar",
+            "hint": "A___",
+            "question": "Blockbuster film directed by James Cameron, set on a distant planet"
+        },
+        {
+            "word": "Titanic",
+            "hint": "T___",
+            "question": "Historical drama film about the sinking of the RMS Titanic"
+        },
+        {
+            "word": "Jurassic Park",
+            "hint": "J___",
+            "question": "Sci-fi adventure film about a group of scientists who visit a dinosaur-inhabited island"
+        },
+        {
+            "word": "Star Wars",
+            "hint": "S___",
+            "question": "Epic space opera franchise centered around the adventures of various characters in a galaxy far, far away"
+        },
+        {
+            "word": "Indiana Jones",
+            "hint": "I___",
+            "question": "Adventure film series about an archaeologist and explorer named Indiana Jones"
+        }
+    ],
+    "space": [
+        {
+            "word": "Astronaut",
+            "hint": "A___",
+            "question": "A person trained to travel and work in outer space"
+        },
+        {
+            "word": "Telescope",
+            "hint": "T___",
+            "question": "A device used to observe distant objects or celestial bodies"
+        },
+        {
+            "word": "Satellite",
+            "hint": "S___",
+            "question": "An object that orbits around a planet or other celestial body"
+        },
+        {
+            "word": "Black Hole",
+            "hint": "B___",
+            "question": "A region of space where the gravitational field is so strong that nothing, not even light, can escape"
+        },
+        {
+            "word": "Galaxy",
+            "hint": "G___",
+            "question": "A vast system of stars, dust, and gas held together by gravity"
+        },
+        {
+            "word": "Asteroid",
+            "hint": "A___",
+            "question": "A small rocky object that orbits the sun"
+        },
+        {
+            "word": "Nebula",
+            "hint": "N___",
+            "question": "A cloud of gas and dust in outer space"
+        },
+        {
+            "word": "Comet",
+            "hint": "C___",
+            "question": "A small celestial body made of ice and dust, that travels around the sun in a highly elliptical orbit"
+        },
+        {
+            "word": "Apollo",
+            "hint": "A___",
+            "question": "A NASA program that successfully landed astronauts on the moon"
+        },
+        {
+            "word": "Cosmos",
+            "hint": "C___",
+            "question": "The universe seen as a whole; the world or the universe seen as an ordered and harmonious whole"
+        }
+    ]
+}

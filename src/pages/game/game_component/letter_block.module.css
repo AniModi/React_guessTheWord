@@ -1,0 +1,43 @@
+.container{
+    padding: 4px;
+    min-width: 26px;
+    max-width: 100px;
+    width: 100%;
+    margin: 0;
+}
+
+
+.btn{
+    min-width: 26px;
+    max-height: 50px;
+    min-height: 20px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B01E68;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 8px 5px 5px #3b192a;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 6px 4px 3px #3b192a;
+    transform: translate(0,0.1em);
+}
+
+.btn:active{
+    box-shadow: 4px 2px 2px #3b192a;
+    transform: translate(0,0.2em);
+}
+
+.btnValue{
+    margin: 0;
+    padding: 0;
+}
