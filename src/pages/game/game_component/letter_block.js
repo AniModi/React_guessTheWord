@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./letter_block.module.css"
 
-const Letter_block = (props) => {
+const LetterBlock = (props) => {
     return(
         <>
         <div className={styles.container}>
@@ -13,4 +13,4 @@ const Letter_block = (props) => {
     );
 }
 
-export default Letter_block;
+export default LetterBlock;
