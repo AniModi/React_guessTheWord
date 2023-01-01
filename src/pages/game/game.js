@@ -32,6 +32,7 @@ const Game = () => {
     if (localStorage.getItem("question") === null) {
       const q = questionArray[Math.floor(Math.random() * questionArray.length)];
       setQuestion(q);
+      setChar(new Set(question["word"].toLowerCase()).size);
       localStorage.setItem("question", q);
     }
     if (lives === 0) {
@@ -42,7 +43,7 @@ const Game = () => {
       localStorage.removeItem("question");
       setGameStatus("gameWon");
     }
-  }, [lives, lettersToWin, questionArray]);
+  }, [lives, lettersToWin, questionArray,question]);
   useEffect(() => {
     setTimeout(() => {
       if (gameStatus === "gameOver") {
