@@ -28,7 +28,7 @@ const Game = () => {
             localStorage.removeItem("question");
             setGameStatus("gameWon");
         }
-    },[lives,lettersToWin]);
+    },[lives,lettersToWin,questionArray]);
     console.log(lettersToWin);
     useEffect(()=>{
         setTimeout(()=>{
@@ -39,7 +39,7 @@ const Game = () => {
                 history.push({pathname:"/result",state:"gameWon"})
             }
         },500);
-    },[gameStatus])
+    },[gameStatus,history])
 
     const [userInput,setUserInput] = useState([]);
     const clickHandler = (char) =>{
