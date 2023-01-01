@@ -1,11 +1,15 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import styles from "./home.module.css"
-
+import btnSound from "./../../sound/btn_click.mp3"
+const clickSound = new Audio(btnSound)
 const Home = () => {
     const history = useHistory();
     const redirect = () => {
-        history.push("/choose-theme")
+        clickSound.play()
+        setTimeout(()=>{
+            history.push("/choose-theme")
+        },500)
     }
     return (
         <>

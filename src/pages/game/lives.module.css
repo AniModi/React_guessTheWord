@@ -16,6 +16,7 @@
     align-items: flex-end;
     border-radius: 20px;
     border: 1px solid;
+    box-shadow: 5px 5px 10px black;
 }
 
 .bar{

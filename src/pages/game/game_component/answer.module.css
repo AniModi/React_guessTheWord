@@ -10,6 +10,7 @@
     align-items: center;
     background-color: #FFE15D;
     padding: 0 25px;
+    box-shadow: 5px 10px 10px #312b12;
 }
 
 .container > *:not(:last-child) {
