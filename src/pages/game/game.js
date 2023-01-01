@@ -79,13 +79,13 @@ const Game = () => {
           console.log(char);
         }
         setUserInput(temp);
+        setChar("-");
       }, 700);
       return () => {
         clearTimeout(timer);
-        setChar("-");
       };
     }
-  }, [char]);
+  }, [char,lettersToWin,lives,question,userInput]);
   const clickHandler = (char) => {
     setChar(char);
   };
