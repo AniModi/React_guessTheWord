@@ -58,7 +58,7 @@ const Game = () => {
   const [userInput, setUserInput] = useState([]);
   const [char, setChar] = useState("-");
   useEffect(() => {
-    if (char != "-") {
+    if (char !== "-") {
       const timer = setTimeout(() => {
         const temp = [...userInput];
         if (
