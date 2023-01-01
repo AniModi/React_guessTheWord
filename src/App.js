@@ -13,10 +13,10 @@ const App = ()  => {
     <Route exact path={"/"}>
       <Home></Home>
     </Route>
-    <Route path={"/choose-theme"}>
+    <Route exact path={"/choose-theme"}>
       <Themes></Themes>
     </Route>
-    <Route path={"/play"}>
+    <Route exact path={"/play"}>
       <Game></Game>
     </Route>
     <Route exact path={"/result"}>

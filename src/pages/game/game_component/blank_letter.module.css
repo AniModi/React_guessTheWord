@@ -3,4 +3,9 @@
     width: 22px;
     padding: 3px;
     margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.5rem;
 }

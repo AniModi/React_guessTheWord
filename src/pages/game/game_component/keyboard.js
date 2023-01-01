@@ -6,13 +6,16 @@ const keyboard  = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', '
 
 
 
-const Keyboard = () => {
+const Keyboard = (props) => {
+    const clickHandler = (char) => {
+        props.onClick(char);
+    }
     return(
         <>
         <div className={styles.container}>
-        <div className={styles.row}>{keyboard.slice(0,10).map((alph)=><LetterBlock alphabet={alph} key={alph}></LetterBlock>)}</div>
-        <div className={styles.row}>{keyboard.slice(10,19).map((alph)=><LetterBlock alphabet={alph} key={alph}></LetterBlock>)}</div>
-        <div className={styles.row}>{keyboard.slice(19).map((alph)=><LetterBlock alphabet={alph} key={alph}></LetterBlock>)}</div>
+        <div className={styles.row}>{keyboard.slice(0,10).map((alph)=><LetterBlock alphabet={alph} key={alph} onClick={clickHandler}></LetterBlock>)}</div>
+        <div className={styles.row}>{keyboard.slice(10,19).map((alph)=><LetterBlock alphabet={alph} key={alph} onClick={clickHandler}></LetterBlock>)}</div>
+        <div className={styles.row}>{keyboard.slice(19).map((alph)=><LetterBlock alphabet={alph} key={alph} onClick={clickHandler}></LetterBlock>)}</div>
         </div>
         </>
     );

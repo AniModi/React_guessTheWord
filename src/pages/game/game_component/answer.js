@@ -4,11 +4,10 @@ import Word from './word';
 
 const Answer = (props) => {
     const word = props.word.split(" ");
-    console.log(word);
     return (
         <>
         <div className={styles.container}>
-            {word.map((w) => <Word word={w} key={w}></Word>)}
+            {word.map((w,index) => <Word word={w} key={index} input={props.input}></Word>)}
         </div>
         </>
     );

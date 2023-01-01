@@ -7,8 +7,9 @@ const themes = Object.keys(questions);
 
 const Themes = () => {
     const history = useHistory();
+    const ind = Math.random();
     const redirect = (event) => {
-        history.push({pathname:"/play",search:"theme="+event.target.textContent})
+        history.push({pathname:"/play",state:{theme:event.target.textContent,ind:ind}})
     }
     return (
     <>
