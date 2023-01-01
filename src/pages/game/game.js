@@ -20,11 +20,11 @@ const Game = () => {
             setQuestion(q)
             localStorage.setItem("question",q);
         }
-        if(lives==0){
+        if(lives===0){
                 localStorage.removeItem("question");
                 setGameStatus("gameOver");
             }
-        if(lettersToWin==0){
+        if(lettersToWin===0){
             localStorage.removeItem("question");
             setGameStatus("gameWon");
         }
@@ -32,10 +32,10 @@ const Game = () => {
     console.log(lettersToWin);
     useEffect(()=>{
         setTimeout(()=>{
-            if(gameStatus=="gameOver"){
+            if(gameStatus==="gameOver"){
                 history.push({pathname:"/result",state:"gameOver"})
             }
-            else if(gameStatus=="gameWon"){
+            else if(gameStatus==="gameWon"){
                 history.push({pathname:"/result",state:"gameWon"})
             }
         },500);
