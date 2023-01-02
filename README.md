@@ -1,10 +1,10 @@
-# About the game
-This is a basic game in which you will be provided with one line description of some country, movie, animal or space and you have to guess it. 
+# Guess the Word!
 
-The website is built on HTML, CSS and React.
+Are you ready to test your knowledge and see how well you can identify different countries, movies, animals, and space objects? If so, then **Guess the Word** is the game for you! 
 
-# Screenshots
+Built with HTML, CSS, and React, this website will provide you with a one-line description and it's up to you to correctly guess the word. With multiple themes to choose from, you can switch up the categories and keep the guessing fun going for hours.
 
+Take a look at some of the screenshots below to get a sneak peek at the game:
 
 ![Home page](https://user-images.githubusercontent.com/98632268/210197264-fe8fb06d-acc6-43e3-a550-bd406cd2c3f4.png)
 
@@ -14,4 +14,6 @@ The website is built on HTML, CSS and React.
 
 ![result page](https://user-images.githubusercontent.com/98632268/210197312-394417b0-6b53-4b18-8386-a330ebc24cc7.png)
 
-Link : https://monumental-marshmallow-b4b806.netlify.app
+Ready to give it a try? Click the link below to play:
+
+🔗 https://monumental-marshmallow-b4b806.netlify.app
