@@ -25,14 +25,14 @@ const Game = () => {
   );
   const [lives, setLives] = useState(5);
   const [lettersToWin, setLettersToWin] = useState(
-    new Set(question["word"].toLowerCase()).size
+    new Set(question["word"].replace(/\s/g,'').toLowerCase()).size
   );
   const [gameStatus, setGameStatus] = useState("running");
   useEffect(() => {
     if (localStorage.getItem("question") === null) {
       const q = questionArray[Math.floor(Math.random() * questionArray.length)];
       setQuestion(q);
-      setChar(new Set(question["word"].toLowerCase()).size);
+      setLettersToWin(new Set(q["word"].replace(/\s/g,'').toLowerCase()).size);
       localStorage.setItem("question", q);
     }
     if (lives === 0) {
@@ -55,13 +55,11 @@ const Game = () => {
       }
     }, 500);
   }, [gameStatus, history]);
-
   const [userInput, setUserInput] = useState([]);
-  const [char, setChar] = useState("-");
-  useEffect(() => {
-    if (char !== "-") {
-      const timer = setTimeout(() => {
-        const temp = [...userInput];
+  const [isDisable,setIsDisable] = useState(false);
+  const clickHandler = (char) => {
+    if(isDisable)return;
+    const temp = [...userInput];
         if (
           !userInput.includes(char) &&
           (question["word"].includes(char.toLowerCase()) ||
@@ -73,22 +71,15 @@ const Game = () => {
         }
         if (
           !question["word"].includes(char) &&
-          !question["word"].includes(char.toLowerCase())
+          !question["word"].includes(char.toLowerCase()) && !userInput.includes(char)
         ) {
           wrongSound.play();
           setLives(lives - 1);
-          console.log(char);
         }
         setUserInput(temp);
-        setChar("-");
-      }, 700);
-      return () => {
-        clearTimeout(timer);
-      };
-    }
-  }, [char,lettersToWin,lives,question,userInput]);
-  const clickHandler = (char) => {
-    setChar(char);
+        setIsDisable(true)
+        setTimeout(()=>setIsDisable(false),1000);
+        console.log(char);
   };
   return (
     <>
